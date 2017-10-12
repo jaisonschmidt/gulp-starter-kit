@@ -1,0 +1,35 @@
+/**
+	all mixins styles
+*/
+@mixin transform($x, $y) {
+	-moz-transform: translateX($x) translateY($y);
+	-webkit-transform: translateX($x) translateY($y);
+	-o-transform: translateX($x) translateY($y);
+	-ms-transform: translateX($x) translateY($y);
+	transform: translateX($x) translateY($y);	
+}
+@mixin radius($t, $r, $b, $l) {
+	-webkit-border-radius: $t + px $r + px $b + px $l + px;
+	border-radius: $t + px $r + px $b + px $l + px;
+}
+@mixin scale($i) {
+	-moz-transform: scale($i);
+	-webkit-transform: scale($i);
+	-o-transform: scale($i);
+	-ms-transform: scale($i);
+	transform: scale($i);
+}
+@mixin transition($a) {
+	-webkit-transition: all $a linear;
+	-moz-transition: all $a linear;
+	-ms-transition: all $a linear;
+	-o-transition: all $a linear;
+	transition: all $a linear;
+}
+@mixin rotate($r) {
+	-moz-transform: rotate($r#{deg});
+	-webkit-transform: rotate($r#{deg});
+	-o-transform: rotate($r#{deg});
+	-ms-transform: rotate($r#{deg});
+	transform: rotate($r#{deg});
+}

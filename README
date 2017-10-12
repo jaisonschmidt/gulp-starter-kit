@@ -1,0 +1,15 @@
+My Gulp Project Starter Kit.
+
+Note: this package is not finished. Why? Because I believe that projects are unique, so you have to customize for your project.
+
+execute:
+# npm install
+# gulp
+
+Just this, in build folder you always have a project.
+
+Some commands are helpfull:
+
+- gulp img (copy all images)
+- gulp template (copy all templates)
+- gulp libs (copy all libs)

@@ -1,0 +1,46 @@
+/** 
+	general styles used
+*/
+
+// display
+.d-inline {
+	display: inline;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-inline-b {
+	display: inline-block;
+}
+
+// positions 
+.p-absolute {
+	position: absolute;
+}
+
+.p-fixed {
+	position: fixed;
+}
+
+.p-relative {
+	position: relative;
+}
+
+.p-static {
+	position: static;
+}
+
+
+// clearfix
+.clearfix {
+	zoom: 1;
+	&::before, &::after {
+		content: '';
+		display: table;
+	}
+	&::after {
+		clear: both;
+	}
+}
